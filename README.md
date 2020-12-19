@@ -3,6 +3,7 @@
 I have created the client and server programs using sockets.
 
 Server Container:
+
 Run 'fileserver.sh' in the server root folder using command: 'sh server.sh'.
 
 This script will create the network as 'mynet' with a random and anonymous subnet.
@@ -16,6 +17,7 @@ It will also automatically build the image named as 'server:1.0'(as that is the 
 The server sends file to the client or establishes communications by using sockets.
 
 Now, I am running the server container named as 'server'.
+
 
 Client Container:
 Coming to 'fileclient.sh', run this script in the client root folder using command: 'sh client.sh'.
@@ -33,6 +35,7 @@ The '/clientdata' directory is attached to the volume named as 'clientvol', so t
 To run the client container named as 'client' in the shell mode instead of just running the application by default, we'll have too use -it in the docker run command after run or we can also enter the container shell using docker exec -it client bash/sh
 
 Once inside the client container, one go to the '/clientdata directory' and fire 'ls' command to check the files in the directory.
+
 
 
 The server sends file to the client or they establishes communication with each other by using sockets but that is not enough as I am containerizing them and I want the containers to communicate.
