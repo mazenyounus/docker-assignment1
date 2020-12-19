@@ -20,6 +20,7 @@ Now, I am running the server container named as 'server'.
 
 
 Client Container:
+
 Coming to 'fileclient.sh', run this script in the client root folder using command: 'sh client.sh'.
 
 It will create the volume for client named as 'clientvol'.
@@ -35,6 +36,7 @@ The '/clientdata' directory is attached to the volume named as 'clientvol', so t
 To run the client container named as 'client' in the shell mode instead of just running the application by default, we'll have too use -it in the docker run command after run or we can also enter the container shell using docker exec -it client bash/sh
 
 Once inside the client container, one go to the '/clientdata directory' and fire 'ls' command to check the files in the directory.
+
 
 
 
